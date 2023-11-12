@@ -45,7 +45,7 @@ Review the file tmp.txt for errors:
 
 ## Example
 This is just made up stuff. The table of
-contents for the README.md file was produces using
+contents for the README.md file was produced using
 this script.
 
 ### Stuff A
@@ -62,7 +62,7 @@ Here is the first subdivision of Stuff B
 Here is the second subdivision of Stuff B
 
 #### B.3
-Here is second third subdivision of Stuff B
+Here is the third subdivision of Stuff B
 
 ### Stuff C
 Stuff C goes here.
