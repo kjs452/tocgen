@@ -79,18 +79,18 @@ usage()
 	echo 'Review/Edit the file tmp.txt to fix any bad headers.'
 }
 
-if [ $# -eq 0 ]; then
-	usage()
+if [ $# -lt 1 -a $# > 2 ]; then
+	usage
 	exit 1
 fi
 
-if [ $# -eq 2 -a $1 = pass1 ]; then
+if [ $# -eq 2 -a "$1" = pass1 ]; then
 	pass1 $2
-elif [ $# -eq 2 -a $1 = pass2 ]; then
+elif [ $# -eq 2 -a "$1" = pass2 ]; then
 	pass2 $2
 elif [ $# -eq 1 ]; then
 	pass1 $1 | pass2
 else
-	usage()
+	usage
 	exit 1
 fi
