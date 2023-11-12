@@ -16,7 +16,7 @@
 #
 #	$ ./tocgen.sh pass1 README.md > tmp.txt
 #
-# Review the file tmp.txt. Fix any incorrectly deduces headers, then run:
+# Review the file tmp.txt. Fix any incorrectly deduced headers, then run:
 #
 #	$ ./tocgen.psh pass2 tmp.txt > toc.md
 #
@@ -79,7 +79,7 @@ usage()
 	echo 'Review/Edit the file tmp.txt to fix any bad headers.'
 }
 
-if [ $# -lt 1 -a $# > 2 ]; then
+if [ $# -lt 1 -o $# -gt 2 ]; then
 	usage
 	exit 1
 fi
